@@ -1,0 +1,56 @@
+.btn
+	*display: inline; /* Fix for IE7 */
+	display inline-block;
+	color texto_blanco
+	text-align center
+	font-size 100%
+	border none
+	cursor: pointer;
+	vertical-align: middle;
+	font-weight 300
+	white-space nowrap
+	zoom: 1;
+	&:focus
+	&:active
+		outline 0
+	&:hover
+		opacity .9
+	/**
+	** Tipo de botones	
+	**/
+		
+	&__primary
+		background color_primary
+	&__success 
+		background color_success
+	&__warning
+		color rgba(texto_blanco, .85)
+		background color_warning
+	&__error
+		background color_error
+	&__info
+		background color_info
+	/**
+	** Tamaño de los botones
+	** Large
+	** big
+	** medium
+	** small
+	**/
+	&__default
+		padding .5rem
+		width auto
+	&__lg
+		padding: 1rem 0;
+		font-size 1.3rem
+		width 100%;
+	&__bg
+		font-size 1.2rem
+		padding 1rem 0
+		width 50%
+	&__md
+		padding 1rem 0
+		width 25%
+	&__sm
+		padding .5rem 0
+		width 10%

@@ -1,0 +1,111 @@
+.fila
+	box-sizing border-box	
+	overflow: hidden
+	width 100%
+	.columna
+		*display: inline; /* Fix for IE7 */
+		box-sizing border-box
+		display inline-block;
+		font-size 1rem
+		margin-right 1%;
+		padding: .5rem;
+		vertical-align: top;
+		zoom: 1; /* Fix for IE7 */
+	.columna
+		width 100%
+
+/*
+** MEDIA QUERY 
+*/
+@media (min-width:480px)
+	.cuatro-columnas
+		.columna
+			width 49%
+			&:nth-child(2n)
+				margin-right 0
+				
+@media (min-width:768px)
+	/*
+		TRES COLUMNAS
+	*/		
+	.tres-columnas
+		font-size 0
+		.columna
+			width 32.66%
+			&:nth-child(3n)
+				margin-right 0
+	/*
+		Sidebar
+	*/			
+	.rigth-sidebar
+	.left-sidebar
+		font-size 0
+		.content
+		.sidebar
+			font-size 1rem
+			display inline-block;
+			vertical-align: middle;
+			zoom: 1; /* Fix for IE7 */
+			*display: inline; /* Fix for IE7 */
+		.content
+			width 74.75%
+		.sidebar
+			margin-right 0
+			width 24.25%
+	.left-sidebar
+		.sidebar
+			margin-right 1%
+		.content
+			margin-right 0
+		/*
+		SEIS COLUMNAS
+	*/				
+	.seis-columnas
+		font-size 0
+		.columna
+			width 15.83%;		
+			&:nth-child(6n)
+				margin-right 0
+	/*
+		DOCE COLUMNAS
+	*/			
+	.doce-columnas
+		font-size 0
+		.columna
+			width 24.25%
+			&:nth-child(4n)
+				margin-right 0
+		/*
+		DOS COLUMNAS
+	*/		
+	.dos-columnas
+		font-size 0
+		.columna
+			width 49.5%;
+			&:nth-child(2n)
+				margin-right 0
+
+@media (min-width:1024px)
+	/*
+		CUATRO COLUMNAS
+	*/			
+	.cuatro-columnas
+		font-size 0
+		.columna
+			width 24.25%
+			&:nth-child(2n)
+				margin-right 1%
+			&:nth-child(4n)
+				margin-right 0
+
+	/*
+		DOCE COLUMNAS
+	*/			
+	.doce-columnas
+		font-size 0
+		.columna
+			width 7.416%
+			&:nth-child(4n)
+				margin-right 1%
+			&:nth-child(12n)
+				margin-right 0

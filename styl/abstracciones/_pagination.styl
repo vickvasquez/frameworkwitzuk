@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    $PAGINACION 
+\*------------------------------------*/
+.navigation
+	background fondo_encab_pagina
+	position: absolute
+	bottom -2.5rem
+	left: 0;
+	width 100%
+	&__tabs
+		position relative
+		display inline-block
+		width 50%
+	&__tab
+		display inline-block
+		vertical-align middle
+		cursor pointer
+		margin-right 2rem
+		&__link
+			text-decoration none
+			font-size 1.3rem
+	&__controles
+		position absolute;
+		display inline-block
+		vertical-align middle
+		right: 0;
+		top: 10%;
+	&__control
+		background:fondo_azul
+		border-radius: 50%
+		color:texto_blanco
+		cursor: pointer
+		display inline-block
+		vertical-align middle
+		height 3rem
+		line-height 3rem
+		text-align center
+		margin-right .5rem
+		margin-top: 0
+		position: relative
+		width: 3rem
+		
+		&:focus
+			opacity .7;
+	/**
+	*  CLASES PARA MOSTRAR EL PROGRESO
+	**/
+	.active
+		color texto_blanco
+	.desactive
+		color texto_negro

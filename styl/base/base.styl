@@ -1,0 +1,93 @@
+/*------------------------------------*\
+  *  Archivo  principal.
+  	Modificar este archivo o generar otro
+    
+  * Info = >http://learnboost.github.io/stylus/docs/mixins.html 
+\*------------------------------------*/
+.main
+	position: relative
+	/*  Se invoca el mixin para establecer el tamaño */
+	sizeMain(80%,auto)
+	background rgba(texto_negro,0.05)
+	top 1rem
+	
+	&__content
+		sizeMain(100%,0)
+		&__header
+			background fondo_encab_pagina
+			position: relative
+		&__title
+			clearMargin()
+			color texto_blanco
+			height 3rem
+			line-height 3rem
+			font-weight 300
+			padding: .5rem 0;
+			text-align center
+		&__subcontent
+			padding 1rem .5rem
+	
+	.showError
+		background color_error
+		borderRound(5px 5px 0 0)
+		bottom 1.2rem
+		color texto_blanco
+		display none
+		font-size 1.1rem
+		height auto
+		margin-left 25%
+		padding 1rem 0
+		position: absolute
+		text-align center
+		width 50%
+.transparente
+	-moz-opacity: 0;
+	background: rgba(texto_negro, .75);
+	bottom:0px; 
+	left:0px; 
+	position:fixed;
+	right:0px;
+	top:0px; 
+	z-index: 100;
+#cont 
+	background:white;
+	height:auto;
+	margin:5% 25%;
+	max-height:1000px;
+	max-width:100%;
+	min-width:100px;
+	position: fixed;
+	overflow:scroll;
+	top:5%;
+	width:50%;
+	z-index: 110; 
+#cont::-webkit-scrollbar{display:none}
+
+#flotante 
+	background: none repeat scroll 0% 0% rgb(0, 101, 150);	
+	width:100%;
+#flotante td
+	color: white;
+	vertical-align middle
+#contid 
+	display:block;
+	font-size:1.5em;
+	padding:5px 10px;
+	text-align right
+#contid:hover
+	opacity:.7;
+	cursor:pointer;
+#contenido
+	background:white;
+	margin:auto;
+	margin-top .5rem
+	overflow:auto; border:solid 0px #333333; border-top:0px;
+	position:relative;
+	top:5%;
+	width:90%;
+
+#cdttl
+	text-transform:uppercase;
+	color:#000;
+	font-weight: bold;
+	text-align:center;

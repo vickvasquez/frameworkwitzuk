@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maquetacion con Grid</title>
+	<link rel="stylesheet" href="../css/grid.css">
+	<link rel="stylesheet" href="../../tuuj/css/apartado.css">
+	<style>
+	.img {
+		width:300px;
+		height:200px;
+	}
+	.texto
+		{
+			max-width:500px;
+			margin: 0 auto;
+		}
+	.logo{
+		height: 60px;
+		border-radius:50%;
+		width: 60px;
+	}
+	.banner
+	{
+		background:url('http://www.squireel.com/assets/img/medias/header-background.jpg') no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 500px
+	}
+	.menu li {
+		display:  inline-block;
+		vertical-align: top;
+	}
+	.footer {
+		background:url('http://www.squireel.com/assets/img/css/1x/pattern.png?1411212842') no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 500px;
+		position: relative;
+	}
+	.footer::after {
+		background: rgba(10, 59, 109, 0.85);
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index:22;
+	}
+	</style>
+</head>
+<body>
+	<header class="fila left-sidebar main__content__header">
+		<div class="sidebar columa">
+			<img src="http://www.squireel.com/assets/img/medias/punchline-3.svg" class="logo" alt="">
+		</div>
+		<div class="content columna pull_right">
+			<nav class="menu">
+				<ul>
+					<li><a href="">Menu 001</a></li>
+					<li><a href="">Menu 002</a></li>
+					<li><a href="">Menu 003</a></li>
+					<li><a href="">Menu 004</a></li>
+					<li><a href="">Menu 005</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<article class="fila total banner">
+	</article>
+	<article class="fila total center">
+		<h1>Nuestros servicios</h1>
+	</article>
+	<article class="fila cuatro-columnas">
+		<div class="columna">
+			<h3 class="center">Servicio 1</h3>
+			<img src="http://www.squireel.com/assets/img/medias/punchline-2.svg" alt="" class="img">
+			<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque quos ex maiores consequuntur amet laboriosam maxime quidem, repudiandae sunt, omnis iure rerum illum, culpa accusantium impedit, veniam fuga ab.</p>
+		</div>
+		<div class="columna center">
+			<h3 class="center">Servicio 2</h3>
+			<img src="http://www.squireel.com/assets/img/medias/punchline-1.svg" alt="" class="img">
+			<p class="center">Sit corporis provident praesentium atque nulla nam asperiores, dolores mollitia deserunt expedita ipsum voluptates accusamus, iusto neque dolorem, tempore. Optio, at sit accusamus similique animi odit veniam blanditiis pariatur esse.</p>
+		</div>
+		<div class="columna">
+			<h3 class="center">Servicio 3</h3>
+			<img src="http://www.squireel.com/assets/img/medias/punchline-4.svg" alt="" class="img">
+			<p class="center">Ut assumenda, sunt explicabo incidunt error sequi quidem tenetur architecto accusantium a, libero placeat? Sed, quasi, natus! Debitis, et quisquam, vero accusamus illo, officiis unde sit similique neque assumenda dicta.</p>
+		</div>
+		<div class="columna">
+			<h3 class="center">Servicio 4</h3>
+			<img src="http://www.squireel.com/assets/img/medias/punchline-3.svg" alt="" class="img">
+			<p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ab est quidem autem voluptate officiis ipsum incidunt blanditiis, odit placeat impedit vel dolorem ad nam praesentium quasi dolor consequuntur alias?</p>
+		</div>
+	</article>
+	<article class="fila dos-columnas">
+		<div class="columna">
+			<h3>Expose your collectibles</h3>
+			<p>
+				Squireel is a service that will allow you, collectors, to expose every of your collections inside a community of passionnated people like you. They are valuable and deserve to be promoted and shared.
+
+				Create your collections, add pictures of your collectibles, detail, push online and share, it's so easy.
+
+				Of course, you will be able to catalogue your collectibles privately to show them to selected people.
+			</p>
+		</div>
+		<div class="columna">
+			<img src="http://www.squireel.com/assets/img/medias/expose.svg" alt="" width="400" height="400">
+		</div>
+	</article>
+		<article class="fila dos-columnas">
+		<div class="columna">
+			<img src="http://www.squireel.com/assets/img/medias/expose.svg" alt="" width="400" height="400">
+		</div>
+		<div class="columna">
+			<h3>Expose your collectibles</h3>
+			<p>
+				Squireel is a service that will allow you, collectors, to expose every of your collections inside a community of passionnated people like you. They are valuable and deserve to be promoted and shared.
+
+				Create your collections, add pictures of your collectibles, detail, push online and share, it's so easy.
+
+				Of course, you will be able to catalogue your collectibles privately to show them to selected people.
+			</p>
+		</div>
+	</article>
+	<footer class="footer fila total">
+		<h2 class="center">Sign up now to get access to the beta !</h2>
+		<p class="texto center">
+			The launch of the beta version of Squireel will occur at the beginning of the year 2015 with the above detailed features. The access is limited, so go ahead and register now to try to win your entry ticket !
+		</p>
+	</footer>
+</body>
+</html>

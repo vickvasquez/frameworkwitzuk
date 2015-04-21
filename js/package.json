@@ -1,0 +1,14 @@
+{
+  "name": "style-guide",
+  "description": "Guia de estilos de witzuk",
+  "author": "Vick Vasquez",
+  "repository": "http://github.com/vickvasquez",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "gulp": "^3.8.11",
+    "gulp-autowatch": "^1.0.1",
+    "gulp-livereload": "^3.8.0"
+  }
+}

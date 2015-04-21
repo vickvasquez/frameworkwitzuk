@@ -1,0 +1,34 @@
+/*------------------------------------*\
+  *  MIXINS automatizar funciones
+    
+  * Info = >http://learnboost.github.io/stylus/docs/mixins.html 
+\*------------------------------------*/
+
+/**
+*	 Definir tamaño contenedor principal
+**/
+
+sizeMain(size=90%,heigth)
+	max-width size
+	margin 0 auto
+	if(heigth > 0)
+		height heigth
+	else
+		height auto
+	
+/*Para quitarle margenes a elementos como:
+	* ul
+	* p
+	* h1
+*/	
+clearMargin()
+	margin 0 
+	padding: 0;
+
+
+/**
+* bordes redondeados para personalizado
+* Ejemplo. border-radius 4px 2px 0 3px
+**/
+borderRound(border)
+	border-radius border

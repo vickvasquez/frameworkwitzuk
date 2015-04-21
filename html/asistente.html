@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/apartado.css">
+	<title> {{ Aqui ira el titulo }}</title>
+</head>
+<body>
+	<section class="main">
+		<!--
+		(article.main__content*5>h2.content__title{ Titulo del paso }>^.content__subcontent{Contenido del cuerpo}>^.navigation>(ul.navigation__tabs>li.navigation__tab*5>a.navigation_link{Item})^span.navigation__control{ Next}*2)+(.main___showError{Error de la app})
+		-->
+		<article class="main__content hide">
+			<h2 class="main__content__title"> Titulo del paso </h2>
+			<div class="main__content__subcontent">
+				<div class="opciones" id="opcion">
+					<span class="btn btn__primary btn__bg round_small" id="nuevo">Generar un apartado</span>
+					<span class="btn btn__primary btn__bg round_small" id="abonar">Abonar un apartado</span>
+					<span class="btn btn__primary btn__bg round_small" id="abonar">Cancelar un apartado</span>
+				</div>
+			</div>
+			<div class="navigation">
+				<ul class="navigation__tabs">
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link active "></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+				</ul>
+				<div class="navigation__controles">
+					<span aria-hidden="true" class="navigation__control icon_next">  </span>
+					<span aria-hidden="true" class="navigation__control icon_prev">  </span>
+				</div>
+			</div>
+		</article>		
+		<article class="main__content hide">
+			<h2 class="main__content__title"> Paso 2 </h2>
+			<div class="main__content__subcontent">
+				<form  id="clientes" class="form form__vertical">
+					<div class="form_fields">
+						<label for="txtid">Cliente</label>
+						<input type="text" name="rfc" id="txtid" required="true" class="form_control texto lleno" placeholder="Ejem. 454">
+						
+					</div>
+
+					<div class="form_fields">
+						<label for="txtnombre">Nombre</label>
+						<input type="text" name="razon_social" id="txtnombre" class="form_control texto lleno"  placeholder="Ejem. Juan">
+					</div>
+					
+					<div class="form_fields">
+						<label for="txtApellido">Apellidos</label>
+						<input type="text"  name="Apellido" id="txtApellido" required="true"  placeholder="ejem. Vasquez Martinez" class="form_control texto lleno">
+					</div>
+					<div class="form_fields">
+						<label for="txttel">Telefono</label>
+						<input type="tel"  name="telefono" class="form_control texto lleno" placeholder="000-000-000" id="txttel" data-type="phone" >
+					</div>
+					<div class="form_fields">
+						<label for="txtdireccion">Direccion</label>
+						<input type="text" name="calleynum" id="txtdireccion" required="false" class="form_control texto lleno" laceholder="Calle, numero, colonia" readonly>
+					</div>
+					<div class="form_fields">
+						<label for="txtcorreo">Email</label>
+						<input type="email" class="form_control texto lleno" name="email" id="txtcorreo" required="false"  placeholder="ejemplo@hotmail.com">
+					</div>
+					<div class="form_fields">
+						<label for="">Celular</label>
+						<input type="tel" name="celular" data-type="phone" placeholder="000-000-0000" id="txtcel" class="form_control texto lleno">
+					</div>
+				</form>	
+			</div>
+			<div class="navigation">
+				<ul class="navigation__tabs">
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link active "></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+				</ul>
+				<div class="navigation__controles">
+					<span aria-hidden="true" class="navigation__control icon_next">  </span>
+					<span aria-hidden="true" class="navigation__control icon_prev">  </span>
+				</div>
+			</div>
+		</article>		
+		<article class="main__content show">
+			<h2 class="main__content__title"> Titulo del paso </h2>
+			<div class="main__content__subcontent">
+				<form  class="form form__horizontal">
+					<div class="form_fields">
+						<select name="" id="" class="form_control">
+							<option value="codbar">Codigo barra</option>
+							<option value="prod_clave">Clave</option>
+						</select>
+					</div>
+					<div class="form_fields">
+						<label for="">Clave:</label>
+						<input type="text" list="productos"  id="prod_clave" data-text="Clave del producto" placeholder="Clave" class="form_control texto" name="prod_clave" onchange="buscar_precio()">
+						<datalist id="productos"></datalist>
+					</div>
+					<div class="form_fields">
+						<label for="">Cantidad:</label>
+						<input type="text" id="cant" data-text="Cantidad a apartar" placeholder="Cantidad" class="form_control texto" name="cant">
+					</div>
+					<div class="form_fields">
+						<label for="">Precio:</label>
+						<input type="text" id="preciou" data-text =" precio del producto" placeholder="Precio" class="form_control texto" name="
+						preciou" >
+					</div>
+					<input type="button" value="Agrega" class="accion btn btn__sm btn__primary round_small">
+				</form>
+				<div class="canasta">
+					<table class="table round_small">
+						<tr class="table__caption">
+							<th>ID</th>
+							<th>Clave</th>
+							<th>Precio</th>
+							<th>Cantidad</th>
+							<th>Importe</th>
+						</tr>
+						<tbody>
+							<tr>
+								<td>val 01</td>
+								<td>val 02</td>
+								<td>val 03</td>
+								<td>val 04</td>
+								<td>val 05</td>
+							</tr>
+							<tr>
+								<td>val 01</td>
+								<td>val 02</td>
+								<td>val 03</td>
+								<td>val 04</td>
+								<td>val 05</td>
+							</tr>
+							<tr>
+								<td>val 01</td>
+								<td>val 02</td>
+								<td>val 03</td>
+								<td>val 04</td>
+								<td>val 05</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="navigation">
+				<ul class="navigation__tabs">
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link navigation__tab__active"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+				</ul>
+				<div class="navigation__controles">
+					<span aria-hidden="true" class="navigation__control icon_next">  </span>
+					<span aria-hidden="true" class="navigation__control icon_prev">  </span>
+				</div>
+			</div>
+		</article>		
+		<article class="main__content hide">
+			<h2 class="content__title"> Titulo del paso </h2>
+			<div class="content__subcontent">Contenido del cuerpo</div>
+			<div class="navigation">
+				<ul class="navigation__tabs">
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+					<li class="navigation__tab"><span aria-hidden="true" class="navigation__tab__link"></span></li>
+				</ul>
+				<div class="navigation__controles">
+					<span aria-hidden="true" class="navigation__control icon_next">  </span>
+					<span aria-hidden="true" class="navigation__control icon_prev">  </span>
+				</div>
+			</div>
+		</article>
+		<div class="showError">Error de la app</div>
+	</section>
+</body>
+</html>

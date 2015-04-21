@@ -1,0 +1,90 @@
+body
+	font-size 16px
+	font-family Arial
+	
+#opciones
+#articulos
+#abono
+#apartar
+#reportesap
+#cliente
+	sizeMain(100%,35rem)
+/**
+** En la ventana de opciones
+**/
+.opciones
+	sizeMain(100%,auto)
+	position: relative
+	top 4rem
+	text-align center
+	&>span
+	.space_vertical
+		margin-bottom 2rem
+/**
+** En la ventana de condiciones de apartado
+**/
+.large
+	text-align center
+.content
+	margin-top .5rem
+	.form_fields
+		display block
+		text-align right
+#datos_apartado
+	.large
+		.form_fields
+			width 100%
+
+.area_folio
+	background texto_blanco
+	box-shadow: 0 0 1px texto_negro
+	height 2.3rem
+	padding .5rem 0
+	text-align center
+	width 100%
+
+/**
+** En la ventana de agregar productos a ala canasta
+**/
+
+#canasta
+	background rgba(204, 204, 204, 0.16)
+	border 2px solid #ccc
+	box-sizing border-box
+	height 15rem
+	margin-bottom 1rem
+	margin-top 2rem
+	padding .5rem
+
+/***
+
+***/
+.main_frame
+	position: relative
+#historia_contacto
+	position: absolute;
+	right: .5rem;
+	top: 2rem;
+	width: 20%;
+	background: white;
+	box-sizing: border-box;
+	padding: .5rem;
+	overflow-y: scroll;
+	height: 200px;
+	box-shadow: 0 0 5px black;
+	border-radius: 5px;
+	
+	li
+		list-style: none
+		margin-bottom 1rem
+	.fecha_historia
+		display: block;
+		border-bottom: 2px solid gainsboro;
+		font-weight: bold;
+		padding-bottom: .4rem;
+		font-size: 13px
+	#observaciones_historia
+		font-size: 14px;
+		padding-top: .5em;
+		display: block;
+		color: rgba(0,0,0,0.7)
